@@ -8,14 +8,14 @@ terraform {
 
   required_version = ">= 1.2.0"
   backend "s3" {
-    bucket         = "myadterraform12" 
+    bucket         = "mywsdevterraform" 
     key            = "terraform.tfstate"          
-    region         = "ca-central-1"                  
+    region         = "us-east-1"                  
   }
 
 
 }
 
 provider "aws" {
-  region = "ca-central-1"
+  region = "us-east-1"
 }
